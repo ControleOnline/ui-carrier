@@ -495,7 +495,7 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import PersonAvatar from "@controleonline/quasar-legacy-ui/ui-common/src/components/Common/PersonAvatar";
+import PersonAvatar from "@controleonline/ui-legacy/ui-common/src/components/Common/PersonAvatar";
 
 import OrderTasks from "@controleonline/ui-tasks/src/components/Tasks";
 import { mapGetters } from "vuex";
