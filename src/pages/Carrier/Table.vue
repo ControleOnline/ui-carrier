@@ -240,7 +240,7 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import CarrierImports from "@controleonline/ui-legacy/ui-import/src/components/Import/ImportsList";
+import CarrierImports from "@controleonline/ui-default/src/components/Default/Import/ImportsList";
 import CarrierTableFixedkg from "../../components/carrier/TableFixedkg";
 import CarrierTableFixedkm from "../../components/carrier/TableFixedkm";
 import CarrierTableFixedpercentage from "../../components/carrier/TableFixedpercentage";
