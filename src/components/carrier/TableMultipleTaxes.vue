@@ -164,7 +164,7 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import SubmissionError from "@controleonline/ui-common/src/error/SubmissionError";
+
 import { extend } from "quasar";
 
 export default {
@@ -212,7 +212,7 @@ export default {
 
       return api.fetch("delivery_taxes", options)
       .catch((e) => {
-        if (e instanceof SubmissionError) throw new Error(e.errors._error);
+        if (e instanceof Error) throw new Error(e.errors._error);
 
         throw new Error(e.message);
       });

@@ -63,7 +63,7 @@
 <script>
 
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import SubmissionError from "@controleonline/ui-common/src/error/SubmissionError";
+
 
 export default {
   props: {
@@ -108,7 +108,7 @@ export default {
         (endpoint, options)
         
         .catch((e) => {
-          if (e instanceof SubmissionError) throw new Error(e.errors._error);
+          if (e instanceof Error) throw new Error(e.errors._error);
 
           throw new Error(e.message);
         });

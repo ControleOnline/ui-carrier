@@ -262,7 +262,7 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import SubmissionError from '@controleonline/ui-common/src/error/SubmissionError';
+
 
 
 const SETTINGS = {
@@ -474,7 +474,7 @@ export default {
       return api.fetch(endpoint, options)
         
         .catch(e => {
-          if (e instanceof SubmissionError)
+          if (e instanceof Error)
             throw new Error(e.errors._error);
 
           throw new Error(e.message);
@@ -512,7 +512,7 @@ export default {
       let endpoint = `delivery_taxes/${id}`;
       return api.fetch(endpoint, options)
         .catch(e => {
-          if (e instanceof SubmissionError)
+          if (e instanceof Error)
             throw new Error(e.errors._error);
 
           throw new Error(e.message);

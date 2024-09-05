@@ -192,7 +192,7 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import SubmissionError from "@controleonline/ui-common/src/error/SubmissionError";
+
 import { mapGetters } from "vuex";
 
 const SETTINGS = {
@@ -332,7 +332,7 @@ export default {
         ("delivery_tax_groups", options)
 
         .catch((e) => {
-          if (e instanceof SubmissionError) throw new Error(e.errors._error);
+          if (e instanceof Error) throw new Error(e.errors._error);
 
           throw new Error(e.message);
         });
@@ -350,7 +350,7 @@ export default {
         (`delivery_tax_groups/${id}`, options)
 
         .catch((e) => {
-          if (e instanceof SubmissionError) throw new Error(e.errors._error);
+          if (e instanceof Error) throw new Error(e.errors._error);
 
           throw new Error(e.message);
         });
@@ -364,7 +364,7 @@ export default {
 
       let endpoint = `delivery_tax_groups/${id}`;
       return api.fetch(endpoint, options).catch((e) => {
-        if (e instanceof SubmissionError) throw new Error(e.errors._error);
+        if (e instanceof Error) throw new Error(e.errors._error);
 
         throw new Error(e.message);
       });
