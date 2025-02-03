@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="col-12">
-                  <PeopleAdminAddresses
+                  <PeopleAdminAddress
                     :people_type="'carriers'"
                     :id="carrierId"
                     @error="
