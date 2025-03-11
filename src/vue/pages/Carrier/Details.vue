@@ -495,9 +495,9 @@
 
 <script>
 import { api } from "app/modules/controleonline/ui-common/src/api";
-import PersonAvatar from "@controleonline/ui-common/src/components/Common/PersonAvatar";
+import PersonAvatar from "@controleonline/ui-common/src/vue/components/Common/PersonAvatar";
 
-import OrderTasks from "@controleonline/ui-tasks/src/components/Tasks";
+import OrderTasks from "@controleonline/ui-tasks/src/vue/components/Tasks";
 import { mapGetters } from "vuex";
 
 import CarrierIntegration from "../../components/carrier/CarrierIntegration";

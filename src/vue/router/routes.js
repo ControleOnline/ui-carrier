@@ -2,7 +2,7 @@
 export const routes = [   
     {
         path: '/carrier/',
-        component: () =>  import ('@controleonline/ui-layout/src/layouts/AdminLayout.vue'),
+        component: () =>  import ('@controleonline/ui-layout/src/vue/layouts/AdminLayout.vue'),
         children: [
           {
             name: 'CarriersIndex',
