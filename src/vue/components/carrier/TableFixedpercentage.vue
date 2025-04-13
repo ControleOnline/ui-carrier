@@ -247,8 +247,8 @@ export default {
         
         .then(result => {
           return {
-            members: result['hydra:member'],
-            total  : result['hydra:totalItems'],
+            members: result['member'],
+            total  : result['totalItems'],
           };
         });
     },

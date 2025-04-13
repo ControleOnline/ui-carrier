@@ -203,7 +203,7 @@ export default {
       return api.fetch('states', { params: { 'order[state]': 'ASC' } })
         
         .then(result => {
-          return result['hydra:member'];
+          return result['member'];
         });
     },
 
