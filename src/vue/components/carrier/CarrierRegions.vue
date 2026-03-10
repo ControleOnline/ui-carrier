@@ -171,7 +171,7 @@ const SETTINGS = {
       field : row => row.tax,
       align : 'left',
       format: (val) => {
-        return this.$formatter. formatMoney(val, 'BRL', 'pt-BR');
+        return this.$formatter. formatMoney(val, 'BRL', 'pt-br');
       },
       label : 'Taxa de coleta'
     },
